@@ -4,6 +4,27 @@ Lista comunitário de compras oferencendo ao usuario a opurtunidade de criar lis
 cada lista poderá ter um grupo de integrantes diferentes e será compostas por itens que poderação ser marcados como concluido ou não 
 e cada integrante poderá adicionar e remover itens na lista
 
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+
 
 
 <table>
