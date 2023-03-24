@@ -6,6 +6,32 @@ e cada integrante poderá adicionar e remover itens na lista
 
 
 
+<table>
+ <tr>
+   <th>Matricula</th>
+   <th>Nome</th>
+   <th>Função</th>
+ </tr>
+ <tr>
+  <td>2020006973</td>
+  <td>2020007090</td>
+  <td>2014113810</td>
+  <td>2020085547</td>
+ </tr>
+ <tr>
+  <td>Raphaela Maria Costa e Silva</td>
+  <td>Victor Kenji Pawlowski Abeki</td>
+  <td>Deborah Santos Andrade Guimarães</td>
+  <td>Samuel Brísio de Jesus</td>
+ </tr>
+ <tr>
+  <td>FullStack</td>
+  <td>FullStack</td>
+  <td>FullStack</td>
+  <td>FullStack</td>
+ </tr>
+</table> 
+
 
 
 
@@ -14,4 +40,4 @@ e cada integrante poderá adicionar e remover itens na lista
 2020006973    Raphaela Maria Costa e Silva        FullStack
 2020007090    Victor Kenji Pawlowski Abeki        FullStack
 2014113810    Deborah Santos Andrade Guimarães    FullStack
-2020085547    Samuel Brísio de Jesusu             FullStack
+2020085547    Samuel Brísio de Jesus             FullStack
