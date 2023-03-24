@@ -1,5 +1,7 @@
+<h1 align="center"> Lista Comunitária de Compras </h1>
+
 Lista comunitário de compras oferencendo ao usuario a opurtunidade de criar listas personalizadas, 
-cada lista pode ter um grupo de integrantes diferentes e será compostas por itens que poderação ser marcados como concluido ou não 
+cada lista poderá ter um grupo de integrantes diferentes e será compostas por itens que poderação ser marcados como concluido ou não 
 e cada integrante poderá adicionar e remover itens na lista
 
 
