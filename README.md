@@ -14,20 +14,22 @@ e cada integrante poderá adicionar e remover itens na lista
  </tr>
  <tr>
   <td>2020006973</td>
-  <td>2020007090</td>
-  <td>2014113810</td>
-  <td>2020085547</td>
- </tr>
- <tr>
   <td>Raphaela Maria Costa e Silva</td>
-  <td>Victor Kenji Pawlowski Abeki</td>
-  <td>Deborah Santos Andrade Guimarães</td>
-  <td>Samuel Brísio de Jesus</td>
+  <td>FullStack</td>
  </tr>
  <tr>
+  <td>2020007090</td>
+  <td>Victor Kenji Pawlowski Abeki</td>
   <td>FullStack</td>
+ </tr>
+ <tr>
+  <td>2014113810</td>
+  <td>Deborah Santos Andrade Guimarães</td>
   <td>FullStack</td>
-  <td>FullStack</td>
+ </tr>
+ <tr>
+  <td>2020085547</td>
+  <td>Samuel Brísio de Jesus</td>
   <td>FullStack</td>
  </tr>
 </table> 
