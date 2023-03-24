@@ -1,31 +1,11 @@
 <h1 align="center"> Lista Comunitária de Compras </h1>
 
 Lista comunitário de compras oferencendo ao usuario a opurtunidade de criar listas personalizadas, 
-cada lista poderá ter um grupo de integrantes diferentes e será compostas por itens que poderação ser marcados como concluido ou não 
-e cada integrante poderá adicionar e remover itens na lista
+cada lista poderá ter um grupo de integrantes diferentes e será compostas por itens que poderação ser marcados como comprados e quem os comprou.
 
-<head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+<p>Cada integrante poderá adicionar e remover itens na lista</p>
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-</head>
-
-
-
+<p>Outras funcionalidade presentes no site será o histórico de compras, o usuário irá poder gerar relátorios sobre os gastos realizados</p>
 
 <table>
  <tr>
@@ -54,13 +34,3 @@ tr:nth-child(even) {
   <td>FullStack</td>
  </tr>
 </table> 
-
-
-
-
- Matricula                 Nome                    Função
-
-2020006973    Raphaela Maria Costa e Silva        FullStack
-2020007090    Victor Kenji Pawlowski Abeki        FullStack
-2014113810    Deborah Santos Andrade Guimarães    FullStack
-2020085547    Samuel Brísio de Jesus             FullStack
