@@ -19,7 +19,10 @@ cada lista poderá ter um grupo de integrantes diferentes e será compostas por 
 
 ## Tecnologias
 
-O Desenvolvimento do projeto utilizará as tecnologias **** **** ****.
+O Desenvolvimento do projeto utilizará as seguintes tecnologias 
+  * FrontEnd -> React
+  * BackEnd -> Node.js
+  * Database -> Express
 
 ## Integrantes
 
