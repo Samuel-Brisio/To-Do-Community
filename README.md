@@ -1,4 +1,4 @@
-<h1 align="center"> Lista Comunitária de Compras </h1>
+<h1 align="center"> VIPList - Lista Comunitária de Compras </h1>
 
 Lista comunitário de compras oferencendo ao usuario a opurtunidade de criar listas personalizadas, 
 cada lista poderá ter um grupo de integrantes diferentes e será compostas por itens que irão conter o nome do produto, quantidade e que poderação ser marcados como comprados.
