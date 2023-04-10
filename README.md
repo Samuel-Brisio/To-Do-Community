@@ -53,3 +53,43 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
   <td>FullStack</td>
  </tr>
 </table> 
+
+
+
+# Backlog do produto
+
+## Histórias de usuário pincipais
+
+1. Como usuário, gostaria de criar uma lista
+2. Como usuário, gostaria de deletar uma lista
+3. Como usuário, gostaria de criar um item para a lista
+    1. Como usuário, gostaria de escrever um nome para o item
+4. Como usuário, gostaria de deletar um item da lista
+5. Como usuário, gostaria de riscar um item da lista
+6. Como usuário, gostaria de fazer login na minha conta do VIPList
+
+## Histórias de usuário secundárias
+
+1. Como usuário, gostaria de cadastrar novos membros no meu grupo do VIPList
+2. Como usuário, gostaria de editar um item da lista
+    1. Como usuário, gostaria de acessar um botão dropdown em uma tarefa com diversas opções de edição
+3. Como usuário, gostaria de anexar uma foto a um item da minha lista
+4. Como usuário, gostaria de adicionar uma data limite para uma lista
+5. Como usuário, gostaria de receber uma notificação por e-mail quando a data limite para uma lista está chegando
+6. Como usuário, gostaria de obter um arquivo de compra ao checar vários itens de uma vez
+7. Como usuário, gostaria de adicionar o valor pago à minha lista arquivo ao terminar uma compra
+8. Como usuário, gostaria de adicionar um local à minha lista arquivo ao terminar uma compra
+
+## Histórias épicas
+
+1. Como usuário, gostaria de ter um sistema de controle de gastos.
+    1. O valor de cada compra é armazenada depois que vários itens são descartados.
+    2. Os valores gastos são armazenados e organizados em ordem cronológica
+    3. Os valores gastos são apresentados visualmente em forma de gráficos
+    4. A representação visual mostra também os locais onde as compras foram feitas.
+    5. Os valores podem ser obtidos diretamente do recibo da compra através da câmera do celular
+2. Como usuário, gostaria que itens recorrentes fossem adicionados automaticamente às minhas listas de compras
+    1. O usuário define listas fixas, como listas de compra de supermercado
+    2. O sistema identifica automaticamente quais itens são comprados com frequência
+    3. O sistema adiciona itens recorrentes com base na frequência identificada
+    4. O sistema manda notificações para o usuário quando um item recorrente não foi comprado há muito tempo.
