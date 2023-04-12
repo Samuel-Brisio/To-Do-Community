@@ -54,8 +54,6 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
  </tr>
 </table> 
 
-
-
 # Backlog do produto
 
 ## Histórias de usuário pincipais
@@ -93,3 +91,59 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
     2. O sistema identifica automaticamente quais itens são comprados com frequência
     3. O sistema adiciona itens recorrentes com base na frequência identificada
     4. O sistema manda notificações para o usuário quando um item recorrente não foi comprado há muito tempo.
+
+# Sprint Backlog
+## História #1: Como usuário, gostaria de criar uma lista
+
+- Tarefas e responsáveis:
+    - Instalar banco de dados e criar primeiras tabelas [Raphaela]
+    - Instalar framework de backend [Samuel]
+    - Instalar framework de frontend (node e React) [Deborah]
+    - Esboçar visual da aplicação [Todos]
+    - Implementar interface visual da página inicial [Victor e Deborah]
+    - Implementar a visão de lista [frontend]
+    - Definir método de interface entre front e back end [Raphaela e Victor]
+    - Criar e testar uma primeira rota de criação de lista [Raphaela]
+
+## História #2: Como usuário, gostaria de deletar uma lista
+
+- Tarefas e responsáveis:
+    - Implementar métodos para deletar uma lista [Raphaela]
+    - Implementar os "botões" para selecionar uma lista e deletá-la [Victor]
+    - Definir método de interface entre front e back end [Raphaela e Victor]
+    - Criar e testar uma rota para deletar uma lista [Raphaela]
+
+## História #3: Como usuário, gostaria de criar um item para a lista
+
+- Tarefas e responsáveis:
+    - Selecionar e implementar uma estrutura de dados para a classe Item [Samuel]
+    - Implementar a visão de um item [Deborah]
+    - Criar interface de usuário para escrever o nome do item [Deborah]
+    - Definir método de interface entre front e back end [Samuel e Deborah]
+    - Criar e testar uma rota de criação do item [Samuel]
+
+## História #4: Como usuário, gostaria de deletar um item da lista
+
+- Tarefas e responsáveis:
+    - Implementar métodos para deletar um item [Samuel]
+    - Implementar os "botões" para selecionar um item e deletá-lo [Deborah]
+    - Definir método de interface entre front e back end  [Samuel e Deborah]
+    - Criar e testar uma rota para deletar um item [Samuel]
+
+## História #5: Como usuário, gostaria de riscar um item da lista
+
+- Tarefas e responsáveis:
+    - Definir e implementar a estrutura e comportamento de um item arquivado [Raphaela]
+    - Implementar na interface de usuário a ação de riscar o nome de um item e checar uma caixa [Victor]
+    - Implementar na interface de usuário a posição de itens checados em uma lista [Victor]
+    - Definir método de interface entre front e back end [Raphaela e Victor]
+    - Criar e testar uma rota para checar uma lista [Raphaela]
+
+## História #6:
+
+- Tarefas e responsáveis: Como usuário, gostaria de fazer login na minha conta do VIPList
+    - Definir uma base de dados de usuários de uma lista [Samuel]
+    - Implementar a visão de uma tela de login [Victor]
+    - Implementar o input do nome de usuário e da senha [Deborah]
+    - Definir método de interface entre front e back end [Deborah, Raphaela]
+    - Criar e testar uma rota de login de um usuário [Raphaela]
