@@ -93,7 +93,7 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
     4. O sistema manda notificações para o usuário quando um item recorrente não foi comprado há muito tempo.
 
 # Sprint Backlog
-## História #1: Como usuário, gostaria de criar uma lista
+## História 1: Como usuário, gostaria de criar uma lista
 
 - Tarefas e responsáveis:
     - Instalar banco de dados e criar primeiras tabelas [Raphaela]
@@ -105,7 +105,7 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
     - Definir método de interface entre front e back end [Raphaela e Victor]
     - Criar e testar uma primeira rota de criação de lista [Raphaela]
 
-## História #2: Como usuário, gostaria de deletar uma lista
+## História 2: Como usuário, gostaria de deletar uma lista
 
 - Tarefas e responsáveis:
     - Implementar métodos para deletar uma lista [Raphaela]
@@ -113,7 +113,7 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
     - Definir método de interface entre front e back end [Raphaela e Victor]
     - Criar e testar uma rota para deletar uma lista [Raphaela]
 
-## História #3: Como usuário, gostaria de criar um item para a lista
+## História 3: Como usuário, gostaria de criar um item para a lista
 
 - Tarefas e responsáveis:
     - Selecionar e implementar uma estrutura de dados para a classe Item [Samuel]
@@ -122,7 +122,7 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
     - Definir método de interface entre front e back end [Samuel e Deborah]
     - Criar e testar uma rota de criação do item [Samuel]
 
-## História #4: Como usuário, gostaria de deletar um item da lista
+## História 4: Como usuário, gostaria de deletar um item da lista
 
 - Tarefas e responsáveis:
     - Implementar métodos para deletar um item [Samuel]
@@ -130,7 +130,7 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
     - Definir método de interface entre front e back end  [Samuel e Deborah]
     - Criar e testar uma rota para deletar um item [Samuel]
 
-## História #5: Como usuário, gostaria de riscar um item da lista
+## História 5: Como usuário, gostaria de riscar um item da lista
 
 - Tarefas e responsáveis:
     - Definir e implementar a estrutura e comportamento de um item arquivado [Raphaela]
@@ -139,7 +139,7 @@ O Desenvolvimento do projeto utilizará as seguintes tecnologias
     - Definir método de interface entre front e back end [Raphaela e Victor]
     - Criar e testar uma rota para checar uma lista [Raphaela]
 
-## História #6:
+## História 6:
 
 - Tarefas e responsáveis: Como usuário, gostaria de fazer login na minha conta do VIPList
     - Definir uma base de dados de usuários de uma lista [Samuel]
