@@ -10,6 +10,7 @@ export type User = {
 export const insertUser = async(user: User) => {
     await dbQuery('INSERT INTO user (userName, password) VALUES(?, ?)' , [user.userName, user.password])
     let retorno = await dbQuery(`SELECT seq AS Id FROM sqlite_sequence WHERE  name = 'user'`);
+    insertUserOnGroup(retorno[0].Id, 1)
     return getUser(retorno[0].Id);
 }
 
@@ -25,6 +26,10 @@ const getUser = async (id: number) => {
 
 const deleteUser = async (id: number) => {
     await dbQueryFirst(`DELETE FROM user WHERE id = ?`, [id]);
+}
+
+const insertUserOnGroup = async(userId : number, groupId: number) => {
+    await dbQuery('INSERT INTO members (groupId, userId) VALUES(?, ?)', [groupId, userId])
 }
 
 export const userModel = {

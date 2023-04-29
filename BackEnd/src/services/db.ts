@@ -6,7 +6,16 @@ if (!DATABASE_FILE)
 
 export const openConnection = () => {
     let db = new sqlite3.Database(DATABASE_FILE);
+    enableCascadeDelete(db)
     return db;
+}
+
+const enableCascadeDelete = (db: sqlite3.Database) => {
+    db.run('PRAGMA foreign_keys = ON;', function(err) {
+        if (err) {
+          console.error(err.message);
+        }
+      });
 }
 
 export const dbQueryFirst = async (query: string, params?: any[]) => {

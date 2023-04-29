@@ -23,8 +23,15 @@ const insertList = (req: Request, res: Response) => {
 }
 
 
-const listLists = ({}: Request, res: Response) => {
-    listModel.listLists()
+const listLists = (req: Request, res: Response) => {
+    const groupId = parseInt(req.params.id);
+    
+    {
+        if(!validateNumber(groupId))
+            return badRequest(res, 'id inválido')
+    }
+
+    return listModel.listLists(groupId)
         .then(lists => {
             res.json(lists)
         })

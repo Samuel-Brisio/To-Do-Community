@@ -7,41 +7,17 @@ Dependencies
 Install Steps
     1. Inside the Folder Backend run inside the terminal
         npm init --yes
-        npm install express
+        npm install
 
-    2. Inside the Folder Backend run inside the terminal
-        npm i -D typescript @types/express @types/node
-        npx tsc --init
-
-    3. Inside the file ./BackEnd/tsconfig.json uncomment the key:value "outDir" and specify the output path
+    2. Inside the file ./BackEnd/tsconfig.json uncomment the key:value "outDir" and specify the output path
         "outDir": "./dist",             /* Specify an output folder for all emitted files. */
 
-    4. Modules/Libries -> nodemon don't need to restart the server to apply modifications | concurrently alternative for "&" unix command (multiplataform)  
-        npm install -D concurrently nodemon
-
-    5. Substitute the code below inside ./BackEnd/package.json
+    3. Substitute the code below inside ./BackEnd/package.json
         "scripts": {
             "build": "npx tsc",
             "start": "node dist/index.js",
             "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
         }
 
-    6. Create a example server copy the code below inside ./BackEnd/index.ts
-        
-        import express, { Express, Request, Response } from 'express';
-
-        const app: Express = express();
-        const port = 8080;
-
-        app.get('/', (req: Request, res: Response) => {
-            res.send('Express + TypeScript Server');
-        });
-
-        app.listen(port, () => {
-            console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
-        });
-
-
-
-    7. Init the Server
+    4. Init the Server
         npm run dev
