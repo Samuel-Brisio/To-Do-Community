@@ -1,0 +1,23 @@
+How to Install Express + TypeScript
+
+Dependencies
+    Nodejs
+
+
+Install Steps
+    1. Inside the Folder Backend run inside the terminal
+        npm init --yes
+        npm install
+
+    2. Inside the file ./BackEnd/tsconfig.json uncomment the key:value "outDir" and specify the output path
+        "outDir": "./dist",             /* Specify an output folder for all emitted files. */
+
+    3. Substitute the code below inside ./BackEnd/package.json
+        "scripts": {
+            "build": "npx tsc",
+            "start": "node dist/index.js",
+            "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+        }
+
+    4. Init the Server
+        npm run dev
