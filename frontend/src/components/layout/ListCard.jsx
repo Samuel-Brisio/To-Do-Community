@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 
-function ListCard() {
+const ListCard = (props) => {
     const alertClicked = () => {
         alert("You clicked the third ListGroupItem");
     };
@@ -13,9 +13,9 @@ function ListCard() {
         <Card style={{ width: "18rem" }}>
             <Card.Header>
                 <Row className="align-items-center">
-                    <Col xs="auto">Lista</Col>
+                    <Col xs="auto">{props.name}</Col>
                     <Col xs="auto">
-                        <Button variant="outline-dark">Deletar</Button>
+                        <Button variant="outline-danger">Deletar</Button>
                     </Col>
                 </Row>
             </Card.Header>

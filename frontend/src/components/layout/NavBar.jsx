@@ -8,20 +8,20 @@ function NavBar() {
         <>
             <Navbar bg="light" variant="light" sticky="top">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="home">
                         <img
                             alt=""
                             src={"/img/logo.svg"}
-                            width="80"
-                            height="80"
+                            width="50"
+                            height="50"
                             className="d-inline-block align-top"
                         />{" "}
                         VIP List
                     </Navbar.Brand>
                     <Navbar.Collapse id="justify-content-center">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#about">About</Nav.Link>
+                            <Nav.Link href="home">Listas</Nav.Link>
+                            <Nav.Link href="about">Sobre</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 
@@ -29,17 +29,17 @@ function NavBar() {
                         <Nav>
                             <NavDropdown title="Nome de Usuário" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">
-                                    Action
+                                    Configurações
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">
-                                    Another action
+                                    Adicionar Usuário
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">
-                                    Something
+                                    Alternar Conta
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">
-                                    Separated link
+                                    Sair
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>

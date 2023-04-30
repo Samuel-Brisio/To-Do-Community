@@ -1,10 +1,9 @@
 import React from "react";
-import { HashRouter as Router } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import NavBar from "../components/layout/NavBar";
-import Routes from "./Routes";
-import GridExample from "../components/layout/GridExample";
+import NavBar from "../components/layout/NavBar"
+import About from "../views/About";
 
 export default function App() {
     return (
@@ -12,11 +11,8 @@ export default function App() {
             <div id="navbar">
                 <NavBar />
             </div>
-            <div>
-                <Routes />
-            </div>
-            <div>
-                <GridExample />
+            <div id="detail">
+                <Outlet />
             </div>
         </>
     );

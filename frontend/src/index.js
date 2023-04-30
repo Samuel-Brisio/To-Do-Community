@@ -3,12 +3,26 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./main/App";
+import Home from "./views/Home";
+import About from "./views/About";
+import NotFound from "./views/NotFound";
 import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+        errorElement: <NotFound />,
+        children: [
+            {
+                path: "home",
+                element: <Home />,
+            },
+            {
+                path: "about",
+                element: <About />,
+            },
+        ],
     },
 ]);
 
