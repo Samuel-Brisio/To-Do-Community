@@ -8,7 +8,7 @@ function NavBar() {
         <>
             <Navbar bg="light" variant="light" sticky="top">
                 <Container>
-                    <Navbar.Brand href="home">
+                    <Navbar.Brand href="/" id="justify-content-center">
                         <img
                             alt=""
                             src={"/img/logo.svg"}
@@ -20,7 +20,7 @@ function NavBar() {
                     </Navbar.Brand>
                     <Navbar.Collapse id="justify-content-center">
                         <Nav className="me-auto">
-                            <Nav.Link href="home">Listas</Nav.Link>
+                            <Nav.Link href="/">Listas</Nav.Link>
                             <Nav.Link href="about">Sobre</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
@@ -28,17 +28,11 @@ function NavBar() {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav>
                             <NavDropdown title="Nome de Usuário" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">
+                                <NavDropdown.Item href="settings">
                                     Configurações
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
-                                    Adicionar Usuário
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">
-                                    Alternar Conta
-                                </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">
+                                <NavDropdown.Item href="welcome">
                                     Sair
                                 </NavDropdown.Item>
                             </NavDropdown>

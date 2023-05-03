@@ -1,4 +1,4 @@
-import ListCard from "./ListCard";
+import ListCard from "../ListCard";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/esm/Container";

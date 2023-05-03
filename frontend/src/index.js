@@ -2,10 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from "./main/App";
+import App from "./App";
 import Home from "./views/Home";
 import About from "./views/About";
 import NotFound from "./views/NotFound";
+import Settings from "./views/Settings";
+import Welcome from "./views/Welcome";
 import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
@@ -15,12 +17,20 @@ const router = createBrowserRouter([
         errorElement: <NotFound />,
         children: [
             {
-                path: "home",
+                path: "",
                 element: <Home />,
             },
             {
                 path: "about",
                 element: <About />,
+            },
+            {
+                path: "settings",
+                element: <Settings />,
+            },
+            {
+                path: "welcome",
+                element: <Welcome />,
             },
         ],
     },
