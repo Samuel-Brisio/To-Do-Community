@@ -12,6 +12,10 @@ import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
     {
+        path: "welcome",
+        element: <Welcome />,
+    },
+    {
         path: "/",
         element: <App />,
         errorElement: <NotFound />,
@@ -27,10 +31,6 @@ const router = createBrowserRouter([
             {
                 path: "settings",
                 element: <Settings />,
-            },
-            {
-                path: "welcome",
-                element: <Welcome />,
             },
         ],
     },
