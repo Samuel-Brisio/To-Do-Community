@@ -5,16 +5,29 @@ import InputGroup from "react-bootstrap/InputGroup";
 const AddList = (props) => {
     return (
         <>
-            <InputGroup className="p-5" size={props.size}>
-                <Form.Control
-                    placeholder={props.placeholder}
-                    aria-label="name"
-                    aria-describedby="basic-addon2"
-                />
-                <Button variant="dark" id="button-addon2">
-                    +
-                </Button>
-            </InputGroup>
+            <div
+                style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyItems: "center",
+                    minWidth: "12rem",
+                    marginLeft: "19.5rem",
+                    marginRight: "19.25rem",
+                    marginTop: "1rem",
+                    marginBottom: "1rem",
+                }}
+            >
+                <InputGroup size={props.size}>
+                    <Form.Control
+                        placeholder={props.placeholder}
+                        aria-label="name"
+                        aria-describedby="basic-addon2"
+                    />
+                    <Button variant="dark" id="button-addon2">
+                        +
+                    </Button>
+                </InputGroup>
+            </div>
         </>
     );
 };
