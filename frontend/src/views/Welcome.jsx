@@ -6,9 +6,10 @@ function Welcome() {
     return (
         <div className="loginForm d-flex justify-content-center align-items-center height-100vh">
             <div className="container col-md-6 offset-md3 col-xl-4 offset-xl-4 h-screen flex items-center justify-center">
-                <Tabs defaultActiveKey="Login" className="" justify>
-                    <Tab eventKey="Login" title="Login">
-                        <form className="card shadow-lg flex rounded w-1/2 p-5">
+            <form className="card shadow-lg flex rounded w-1/2">
+                <Tabs defaultActiveKey="Login" variant="pills" fill>
+                    <Tab eventKey="Login" title="Login" className="p-5">
+                        
                             <h1 className="text-3xl text-center">
                                 Login VIPList
                             </h1>
@@ -23,13 +24,14 @@ function Welcome() {
                                 </label>
                                 <input className="form-control" type="password" name="senha" placeholder="Digite sua senha"/>
                                 <div className="pt-3 text-center">
-                                    <button className="btn btn-primary">Entrar</button>
+                                    <button className="btn customButton">Entrar</button>
                                 </div>
                             </div>
-                        </form>
+                        
                     </Tab>
                     <Tab eventKey="Cadastro" title="Cadastro"></Tab>
                 </Tabs>
+                </form>
             </div>    
         </div>
     );

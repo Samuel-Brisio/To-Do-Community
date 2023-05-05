@@ -23,3 +23,16 @@
     background-color: rgb(32, 233, 139);
     height:100vh;
 }
+
+.nav.nav-pills .nav-link.active{
+    background-color: rgb(	19, 139, 83);
+}
+
+.customButton{
+    background-color: rgb(5, 172, 94);
+    color: white;
+}
+.customButton:hover {
+    background-color: rgb(	19, 139, 83);
+    color: white;
+}
