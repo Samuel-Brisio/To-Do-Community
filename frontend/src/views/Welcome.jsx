@@ -1,20 +1,21 @@
 import React from "react";
 import '../App.css';
+import {Tab, Tabs } from "react-bootstrap";
 
 function Welcome() {
     return (
-        <body className="loginForm d-flex justify-content-center align-items-center height-100vh">
-            <main className="container col-md-6 offset-md3 col-xl-4 offset-xl-4 h-screen flex items-center justify-center">
-                <form className="card shadow-lg flex rounded w-1/2">
-                    <div className="flex m-5">
-                        <h1 className="text-3xl text-center">
-                            Login VIPList
-                        </h1>
-                        <div className="">
+        <div className="loginForm d-flex justify-content-center align-items-center height-100vh">
+            <div className="container col-md-6 offset-md3 col-xl-4 offset-xl-4 h-screen flex items-center justify-center">
+                <Tabs defaultActiveKey="Login" className="" justify>
+                    <Tab eventKey="Login" title="Login">
+                        <form className="card shadow-lg flex rounded w-1/2 p-5">
+                            <h1 className="text-3xl text-center">
+                                Login VIPList
+                            </h1>
                             <div className="text-justify px-5">
                                 {/* Nome */}
-                                <label className="py-2" htmlFor="name">
-                                    Nome:
+                                <label className="py-2" htmlFor="e-mail">
+                                    E-mail:
                                 </label>
                                 <input className="form-control" type="text" name="name" placeholder="Digite seu nome"/>
                                 <label className="py-2" htmlFor="name">
@@ -25,11 +26,12 @@ function Welcome() {
                                     <button className="btn btn-primary">Entrar</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </form>
-            </main>
-        </body>
+                        </form>
+                    </Tab>
+                    <Tab eventKey="Cadastro" title="Cadastro"></Tab>
+                </Tabs>
+            </div>    
+        </div>
     );
 }
 
