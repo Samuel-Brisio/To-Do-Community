@@ -9,10 +9,20 @@ import DropdownButton from "react-bootstrap/esm/DropdownButton";
 import AddItem from "./AddItemForm";
 import items from "../data/items";
 
+import api from "../Services/api";
+
 const ListCard = (props) => {
     const [alertShow, setAlertShow] = React.useState(false);
 
     const [itemFormShow, setItemFormShow] = React.useState(false);
+
+    function handleDelete(){
+        api.delete("lists/list/"+props.id)
+            .then((res) => {
+                props.refreshLists();
+            })
+            .catch((err) => console.log("Não foi possível deletar lista!!!"))
+    }
 
     return (
         <Card style={{ display: "flex" }}>
@@ -36,7 +46,7 @@ const ListCard = (props) => {
                             />
                             <Dropdown.Item
                                 action
-                                onClick={() => setAlertShow(true)}
+                                onClick={handleDelete}
                             >
                                 Deletar lista
                             </Dropdown.Item>

@@ -20,19 +20,19 @@
 }
 
 .loginForm{
-    background-color: rgb(32, 233, 139);
+    background-color: rgb(223, 223, 223)/*rgb(32, 233, 139)*/;
     height:100vh;
 }
 
 .nav.nav-pills .nav-link.active{
-    background-color: rgb(	19, 139, 83);
+    background-color: rgb(rgb(13,110,253));/*rgb(	19, 139, 83);*/
 }
 
-.customButton{
+/*.customButton{
     background-color: rgb(5, 172, 94);
     color: white;
-}
-.customButton:hover {
+}*/
+/*.customButton:hover {
     background-color: rgb(	19, 139, 83);
     color: white;
-}
+}*/
