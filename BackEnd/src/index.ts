@@ -12,11 +12,15 @@ const port = 8080;
 const app: Express = express();
 app.use(cors)
 
-app.use(cors({
-  origin: 'http://localhost:3000',
-  credentials: true
-}
-));
+const allowedOrigins = ['http://localhost:3000'];
+
+const options: cors.CorsOptions = {
+  origin: allowedOrigins
+};
+
+
+// Then pass these options to cors:
+app.use(cors(options));
 app.use(bodyParser.json());
 useRoutes(app);
 listRoutes(app);
