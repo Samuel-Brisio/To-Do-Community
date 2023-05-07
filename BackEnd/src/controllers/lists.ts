@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { badRequest, internalServerError, validateNumber, notFound, ok } from '../services/util';
 import { List, listModel } from '../models/lists';
+import { itemModel } from '../models/items';
 
 const insertList = (req: Request, res: Response) => {
 
@@ -32,7 +33,12 @@ const listLists = (req: Request, res: Response) => {
     }
 
     return listModel.listLists(groupId)
-        .then(lists => {
+        .then(async lists => {
+
+            for(let list of lists) {
+                list.itens = await itemModel.listItems(list.id); 
+            }
+
             res.json(lists)
         })
         .catch(err => internalServerError(res, err));
@@ -46,9 +52,11 @@ const getList = (req: Request, res: Response) => {
     }
 
     return listModel.getList(id)
-        .then((list) => {
-            if(list)
+        .then(async (list) => {
+            if(list) {
+                list.itens = await itemModel.listItems(list.id); 
                 return res.json(list);
+            }
             else
                 return notFound(res);
         })

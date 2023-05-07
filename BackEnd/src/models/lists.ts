@@ -1,10 +1,11 @@
 import { dbQuery, dbQueryFirst } from '../services/db';
-
+import { Item } from './items';
 
 export type List = {
     id: number;
     listName: string;
     groupId: number;
+    itens: Item[];
 }
 
 export const insertList = async(list: List) => {

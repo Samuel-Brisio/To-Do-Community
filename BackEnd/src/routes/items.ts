@@ -5,7 +5,7 @@ const itemRouter = Router();
 
 // Use Item ID
 itemRouter.patch('/crossout/:id', itemController.crossedOutItem)
-itemRouter.delete('/item/:id', itemController.deleteItem); // Wrong
+itemRouter.delete('/item/:id', itemController.deleteItem); 
 
 // Use List ID
 itemRouter.post('/', itemController.insertItem);
