@@ -66,9 +66,35 @@ const deleteUser = async (req: Request, res: Response) => {
         .catch(err => internalServerError(res, err));
 }
 
+const loginUser = async (req: Request, res: Response) => {
+    {
+        const user = req.body;
+        if (!user)
+            return badRequest(res, "Usuário inválido");
+
+        if (!user.userName)
+            return badRequest(res, 'Informe o nome do usuario');
+
+        /*if (!validateNumber(user.password))
+        '''    return badRequest(res, 'Informe a senha');*/
+    }
+
+    const user = req.body as User;
+    return userModel.loginUser(user)
+        .then(user => {
+            if (user.length > 0) {
+                res.send("Usuario Existe");
+            }
+            else res.send("Usuario não cadastrado");
+        })
+        .catch(err => internalServerError(res, err));
+
+}
+
 export const userController = {
     insertUser,
     listUsers,
     getUser,
-    deleteUser
+    deleteUser,
+    loginUser
 }

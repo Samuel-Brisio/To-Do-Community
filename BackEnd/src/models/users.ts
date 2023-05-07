@@ -32,9 +32,15 @@ const insertUserOnGroup = async(userId : number, groupId: number) => {
     await dbQuery('INSERT INTO members (groupId, userId) VALUES(?, ?)', [groupId, userId])
 }
 
+const loginUser = async(user: User) => {
+    console.log(user)
+    return await dbQuery('SELECT * FROM user WHERE userName = ? AND password = ?', [user.userName, user.password])
+}
+
 export const userModel = {
     insertUser,
     listUsers,
     getUser,
-    deleteUser
+    deleteUser,
+    loginUser
 }
