@@ -44,13 +44,13 @@ function Welcome(){
                             <label className="py-2" htmlFor="userName">
                                 Nome de Usuário:
                             </label>
-                            <input required onChange={handleUserNameChange} value={userName} className="form-control" type="text" name="userName" placeholder="Digite seu e-mail"/>
+                            <input required onChange={handleUserNameChange} value={userName} className="form-control" type="text" name="userName" placeholder="Digite seu Nome de Usuário"/>
                             <label className="py-2" htmlFor="name">
                                 Senha:
                             </label>
                             <input required onChange={handleSenhaChange} value={senha} className="form-control" type="password" name="senha" placeholder="Digite sua senha"/>
                             <div className="pt-3 text-center">
-                                <button className="btn btn-primary" onClick={handleSubmit}>Entrar</button>
+                                <button className="btn customButton" onClick={handleSubmit}>Entrar</button>
                             </div>
                         </div>
                     </Tab>
@@ -69,7 +69,7 @@ function Welcome(){
                             </label>
                             <input className="form-control" type="password" name="senha" placeholder="Digite sua senha"/>
                             <div className="pt-3 text-center">
-                                <button className="btn btn-primary">Cadastrar</button>
+                                <button className="btn customButton">Cadastrar</button>
                             </div>
                         </div>
                     </Tab>

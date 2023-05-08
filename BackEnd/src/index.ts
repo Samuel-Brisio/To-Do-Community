@@ -1,26 +1,22 @@
 import dotenv from 'dotenv';
 dotenv.config();
+
 import express, { Express, Request, Response } from "express";
-import cors from "cors";
+import 'cors';
 import { useRoutes } from './routes';
 import { listRoutes } from './routes';
 import { itemRoutes } from './routes';
+const port = 8080;
 import bodyParser from 'body-parser';
 
-const port = 8080;
-
 const app: Express = express();
-app.use(cors)
+const cors = require('cors');
 
-const allowedOrigins = ['http://localhost:3000'];
-
-const options: cors.CorsOptions = {
-  origin: allowedOrigins
-};
-
-
-// Then pass these options to cors:
-app.use(cors(options));
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}
+));
 app.use(bodyParser.json());
 useRoutes(app);
 listRoutes(app);

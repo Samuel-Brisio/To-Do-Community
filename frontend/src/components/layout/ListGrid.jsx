@@ -12,12 +12,15 @@ function ListGrid() {
     const [lists, setLists] = useState([]);
 
     function refreshLists() {
+        console.log('Handle REFRESH OK! ');
         api.get("lists/group/1")
             .then((res) => {
+                console.log('Handle THEN OK! ');
                 console.log(res.data);
                 setLists(res.data);
             })
             .catch((err) => {
+                console.log('Handle ERR OK! ');
                 console.log(err);
             })
     }
