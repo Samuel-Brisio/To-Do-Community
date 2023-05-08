@@ -13,7 +13,7 @@ const AddList = (props) => {
     function handleSubmit(event){
         console.log('Handle Submit OK!');
         
-        api.get("/users", {listName})
+        api.get("/lists", {listName})
             .then((res) => {
                 console.log(res);
             })
